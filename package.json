@@ -1,20 +1,18 @@
 {
   "name": "proxy-middleware",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/rockysantiago/proxy-middleware.git",
-  "author": "rockysantiago <raphael.santiago@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon -r dotenv/config -r esm index.js"
+    "dev": "backpack",
+    "build": "backpack build",
+    "serve": "node ./build/main.js"
   },
   "dependencies": {
+    "backpack-core": "^0.8.4",
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
-    "esm": "^3.2.5",
     "express": "^4.16.4",
     "http-proxy-middleware": "^0.19.1",
-    "https-proxy-agent": "^2.2.1",
-    "nodemon": "^1.18.10"
+    "https-proxy-agent": "^2.2.1"
   }
 }
